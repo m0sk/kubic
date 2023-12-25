@@ -33,4 +33,4 @@ spec:
         #image: cloudnatived/demo:hello
         image: m0sk/myhello
         ports:
-        - containerPort: 8888
+        - containerPort: 80
