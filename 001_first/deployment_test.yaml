@@ -8,7 +8,8 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 80
+  - port: 8080
+    targetPort: 8888
   selector:
     app: demo
 ---
@@ -33,4 +34,4 @@ spec:
         #image: cloudnatived/demo:hello
         image: m0sk/myhello
         ports:
-        - containerPort: 80
+        - containerPort: 8888
